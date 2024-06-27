@@ -34,13 +34,13 @@ const newSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    businessArena: {  // Corrected field name
+    businessArena: { 
         type: String,
         required: true, 
         trim: true
     },
     employees: {
-        type: String,  // Changed to Number if it's intended to store numbers
+        type: String, 
         required: true,
         min: 1
     },
@@ -58,6 +58,11 @@ const newSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    place: {
+        type: String,
+        required: true,
+        trim: true
+    },
     country: {
         type: String,
         required: true,
@@ -69,6 +74,11 @@ const newSchema = new mongoose.Schema({
         trim: true
     },
     phoneNumber: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    email: {
         type: String,
         required: true,
         trim: true

@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import Badge from './components/Badge';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import ParentComponent from './Parent'; 
 
-function App() {
-  const [isOpen, setOpen]= useState(false)
-
+const App = () => {
   return (
     <div>
-
-    <Badge />
-
+      <Routes>
+        <Route path="/*" element={<ParentComponent />} />
+        <Route path="/some-path" element={<div>Some Path</div>} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
